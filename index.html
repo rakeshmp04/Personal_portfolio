@@ -13,18 +13,45 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h2 class="logo"><span>R</span>akesh.</h2>
+                <a style="text-decoration: none;" href="#header"><h2 class="logo"><span>M</span>P.</h2></a>
                 <ul>
                     <li><a href="#header">Home</a></li>
+                    <li><a href="#portfolio">Resume</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
                 <p>Frontend developer.</p><br>
-                <h1>Hi, I'm <span> Rakesh </span>MP <br>from India.</h1>
+                <h1>Hi, I'm <span> Rakesh </span>MP</h1>
+                <p id="para">Currently working as ASE at Mphasis limited.</p>
             </div>
+        </div>
+    </div>
+
+     <!--------------------------Portfolio----------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>My </span>work.</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/music.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App.</h3>
+                        <p>Refresh yourself by listening to your favourite songs.</p>
+                        <a href="https://music4uapp.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculator.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator.</h3>
+                        <p>Count your bank balance by using our Calculator.</p>
+                        <a href="https://calculator4uapp.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">See more</button>
         </div>
     </div>
 
@@ -73,31 +100,7 @@
             </div>
         </div>
     </div>
-    <!--------------------------Portfolio----------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title"><span>My </span>work.</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/music.jpg" alt="">
-                    <div class="layer">
-                        <h3>Music App.</h3>
-                        <p>Refresh yourself by listening to your favourite songs.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/calculator.jpg" alt="">
-                    <div class="layer">
-                        <h3>Calculator.</h3>
-                        <p>Count your bank balance by using our Calculator.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btn">See more</button>
-        </div>
-    </div>
+   
     <!-----------------------Contact--------------------->
     <div id="contact">
         <div class="container">
@@ -113,16 +116,16 @@
                     <div class="social-icons">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/rakeshmp04/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="#" download class="btn btn2">Download CV</a>
+                    <a href="#" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your name" required>
+                    <form action="connect.php" method="post">
+                        <input type="text" name="name" placeholder="Your name" required>
                         <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
-                        <button class="btn btn3" type="submit">submit</button>
+                        <textarea name="message" rows="10" placeholder="Your Message"></textarea>
+                        <input type="submit" class="btn btn3">
                     </form>
                 </div>
                 
